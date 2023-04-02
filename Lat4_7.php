@@ -1,9 +1,9 @@
 <?php
-final class A
+class A
 
 {
 
-public function disp(){
+	public function disp(){
 	
 	echo "Inside the final function";
 
@@ -11,9 +11,10 @@ public function disp(){
 
 }
 
-class B extends A {
+class B extends A 
+{
 	
-	function disp(){
+	final public function disp(){
 		
 	echo "Inside the final function";
 	
